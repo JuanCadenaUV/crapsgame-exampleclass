@@ -3,7 +3,7 @@ package com.example.crapsgame;
 /**
  * This class represent Arithmetic Operations
  * @author JUAN MANUEL CADENA
- * @version 1.0
+ * @version 1.5
  */
 public class ArithmeticOperations {
 
@@ -51,13 +51,11 @@ public class ArithmeticOperations {
         return a / b;
     }
 
-    /*
-    Common method for performing a multiplication
+    //Common method for performing a multiplication
 
     public int multiplication(int a, int b) {
         return a * b;
     }
-    */
 
     //Another method for performing a multiplication
 
@@ -69,6 +67,7 @@ public class ArithmeticOperations {
      * @see #addition(int a, int b)
      * @since 1.3
      */
+    /*
     public int multiplication(int a, int b) {
         int acum = 0;
         for (int i = 0; i < b; i++) {
@@ -76,5 +75,6 @@ public class ArithmeticOperations {
         }
         return acum;
     }
+     */
 
 }
