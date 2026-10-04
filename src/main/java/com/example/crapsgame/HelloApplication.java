@@ -18,14 +18,14 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        //stage.setTitle("Game");
-
+        stage.setTitle("Game");
 
         //FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Game-view.fxml"));
         //Scene scene = new Scene(fxmlLoader.load(), 320, 240);
 
         //Stage representa una ventana emergente donde se pondrá el contenido
 
+        /*
         //Tittle (Titulo)
         stage.setTitle("Hello!");
 
@@ -70,12 +70,12 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
 
+         */
 
 
         //Ahora haremos lo mismo con JavaFX
 
-        /*
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Game-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Welcome-view.fxml"));
         //No podemos hacer directamente VBox root = fmlLoader.load();
 
         //Parent es la clase papá del contenedor
@@ -85,6 +85,6 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
 
-         */
+
     }
 }

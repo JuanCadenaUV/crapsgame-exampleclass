@@ -6,14 +6,15 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crapsgame.controllers.WelcomeController">
    <children>
       <Label text="Nombre de Usuario" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Label>
-      <TextField maxWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" />
-      <Button mnemonicParsing="false" style="-fx-border-color: purple;" text="Iniciar">
+      <TextField fx:id="textFieldNickname" maxWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" />
+      <!--Agregamos un controlador para el evento del bóton de inicio -->
+      <Button mnemonicParsing="false" onMouseClicked="#onMouseClickedBtnStart" style="-fx-border-color: purple;" text="Iniciar">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Button>
