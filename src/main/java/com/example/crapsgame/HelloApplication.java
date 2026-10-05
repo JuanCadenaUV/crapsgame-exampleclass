@@ -1,5 +1,6 @@
 package com.example.crapsgame;
 
+import com.example.crapsgame.views.WelcomeView;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -18,7 +19,7 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        stage.setTitle("Game");
+        //stage.setTitle("Game");
 
         //FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Game-view.fxml"));
         //Scene scene = new Scene(fxmlLoader.load(), 320, 240);
@@ -26,7 +27,7 @@ public class HelloApplication extends Application {
         //Stage representa una ventana emergente donde se pondrá el contenido
 
         /*
-        //Tittle (Titulo)
+        Tittle (Titulo)
         stage.setTitle("Hello!");
 
         //Layauts (Contenedores)
@@ -70,9 +71,6 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
 
-         */
-
-
         //Ahora haremos lo mismo con JavaFX
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Welcome-view.fxml"));
@@ -84,7 +82,13 @@ public class HelloApplication extends Application {
 
         stage.setScene(scene);
         stage.show();
+        */
 
+        //Creamos una instancia del welcomeView
+        //Con "getInstance" se asegura que la ventana siempre sea la misma
+        WelcomeView welcomeView = WelcomeView.getInstance();
 
+        //Muestra la ventana, semejante al print
+        welcomeView.show();
     }
 }
