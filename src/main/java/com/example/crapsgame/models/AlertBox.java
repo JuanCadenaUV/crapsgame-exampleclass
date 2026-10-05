@@ -14,10 +14,20 @@ public class AlertBox implements AlertBoxInterface {
         alert.setHeaderText(header);
         alert.setContentText(message);
         Optional<ButtonType> response = alert.showAndWait();
+
         //Si realmente tenemos una respuesta y esa respuesta es OK, arroje True; Es lo que significa la siguiente linea
         if (response.isPresent() && response.get() == ButtonType.OK) {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void showAlertBox(String title, String header, String message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle(title);
+        alert.setHeaderText(header);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 }
